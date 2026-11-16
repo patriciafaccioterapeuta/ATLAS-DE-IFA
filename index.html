@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas de Ifá</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf7ef;color:#272620;font:16px system-ui,sans-serif}header{background:#21392f;color:#fff8e5;padding:3rem max(5vw,1rem)}h1,h2{font-family:Georgia,serif}h1{margin:0;font-size:clamp(2.8rem,7vw,5rem);font-weight:400}header p{max-width:49rem;line-height:1.6}main{max-width:1200px;margin:auto;padding:2rem 1rem}.layout{display:grid;grid-template-columns:17rem 1fr;gap:2rem}section,aside{min-width:0}input,select,button{font:inherit;padding:.65rem;border:1px solid #827d6d;border-radius:.45rem;background:#fffdf7;color:inherit}input,select{width:100%;margin:.4rem 0 .8rem}button{cursor:pointer}button[aria-pressed=true]{background:#21392f;color:white}nav{display:grid;gap:.35rem}nav button{text-align:left}article,details{background:#fffdf7;border:1px solid #ded6c4;padding:1rem;border-radius:.6rem;margin:.65rem 0}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.6}a{color:#29513e}h3{margin:.1rem 0 .55rem}.muted{color:#514e44}label{font-weight:650}@media(max-width:700px){.layout{grid-template-columns:1fr}nav{grid-template-columns:repeat(auto-fit,minmax(9rem,1fr))}}
+
+:root{--ink:#23352e;--gold:#ae7934;--paper:#faf6ed}body{background:var(--paper);color:var(--ink)}header{padding:4.5rem max(5vw,1.25rem);background:radial-gradient(ellipse at 85% 0%,#4b624c,transparent 55%),#192e26;border-bottom:5px solid #b98c49}header h1{letter-spacing:-.055em}header p{color:#e8e3cf;font-size:1.12rem}main{max-width:1320px}.layout{gap:2.5rem}aside nav button{border-color:#e2d8c3;border-radius:0;padding:.66rem .8rem}section>h2,aside h2{letter-spacing:-.025em;font-size:2rem}input,select{border-color:#bdad90}article{padding:1.4rem 1.65rem;border-radius:.8rem;box-shadow:0 4px 15px #5b441310;border-top:3px solid #c39756}article h3{font:600 1.65rem Georgia,serif}details{border-color:#e1d7c2}details[open]>summary{margin-bottom:.85rem}.lead{font:1.23rem/1.55 Georgia,serif;max-width:55ch;margin:.7rem 0 1.25rem}.themes{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;padding:0}.themes li{background:#ece9d6;border-radius:2rem;padding:.35rem .75rem}.source{display:inline-block;margin-top:.45rem}.map{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:.75rem;margin:1rem 0}.map div{background:#f0e9d9;border-left:3px solid var(--gold);padding:.8rem}.map strong{display:block;font:1.75rem Georgia,serif}
+.family-odus{display:grid;gap:.25rem;padding:.4rem 0 .65rem .7rem;border-left:2px solid #b98c49}.family-odus button{font-size:.9rem}.family-odus button:disabled{color:#635b4c;cursor:default}.family-listing{margin:.55rem 0 1.2rem;color:#514e44}nav details{margin:0;padding:.5rem;background:#fffdf7}nav details summary{margin:.2rem}nav .family-odus button{width:100%}
+.study-intro{background:#21392f;color:#fff7e7;border-radius:.9rem;padding:1.35rem 1.55rem;margin:1rem 0}.study-intro h4,.study-intro p{margin:.25rem 0}.study-intro .lead{margin:.55rem 0}.study-block{margin:1.25rem 0}.study-block h4{font:600 1.25rem Georgia,serif;margin:.3rem 0 .7rem}.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.65rem}.concept{padding:.85rem;background:#f2ecdd;border-radius:.55rem;border-left:3px solid #b38849}.concept p{margin:.32rem 0;color:#494a3d}.concept button{border:0;padding:.25rem .35rem;text-align:left;background:#fffaf0;text-decoration:underline}.memory{border:1px solid #aa916b;background:#fff7e5}.memory p{margin:.45rem 0}.passage{border-left:3px solid #af8450}.passage .translation{padding:.85rem;background:#e7efe5;border-radius:.4rem;line-height:1.55}.passage mark{background:#f4df97;color:#29251b;border-radius:.18rem}blockquote{margin:.6rem 0;padding:.65rem .8rem;border-left:3px solid #b38849;background:#f8f2e6;line-height:1.55}.doc-name{font-size:.87rem;color:#595446}.inline-source{margin-top:.65rem}.reading-focus{outline:2px solid #ad7c40;outline-offset:3px}
+.reading-summary{background:#f4ebd7;border:1px solid #d9c49e;border-left:4px solid #ae7934;border-radius:.55rem;padding:.8rem 1rem;margin:.6rem 0 1rem}.reading-summary h4{margin:0 0 .45rem}.reading-summary p,.reading-summary ul{margin:.35rem 0;line-height:1.5}.reading-summary li+li{margin-top:.35rem}</style>
+<header><h1>Atlas de Ifá</h1><p>Biblioteca de estudo dos Odù. Explore as famílias do acervo, encontre passagens nas apostilas e consulte a página original.</p></header>
+<main>
+<details open><summary>O que é Ifá e como estudar com este material</summary>
+<h3>O que é Ifá</h3>
+<p>Ifá é uma tradição iorubá de divinação e transmissão oral. Na prática divinatória, o Bàbáláwo interpreta os sinais da consulta à luz dos versos transmitidos na tradição. Esses versos podem reunir narrativas, orientações e referências a personagens, divindades e situações da vida.</p>
+<h3>O que são os Odù</h3>
+<p>Odù designa cada uma das 256 divisões do corpus de Ifá, associadas aos sinais da divinação. Cada Odù reúne vários versos, chamados <em>ẹsẹ</em>. Leia cada verso junto com o relato e as circunstâncias apresentados na apostila.</p>
+<div class="map"><div><strong>16</strong> Odù principais (Méjì)</div><div><strong>240</strong> Odù combinados</div><div><strong>256</strong> Odù no total</div></div>
+<p>Cada sinal tem duas colunas. As colunas iguais formam um Méjì. Colunas diferentes formam um Odù combinado, e a ordem importa. Ogbè–Ọ̀yẹ̀kú e Ọ̀yẹ̀kú–Ogbè são combinações distintas. O menu segue as 16 famílias das suas apostilas. Nesse arranjo, cada família pode reunir o Méjì e as 15 combinações em que seu nome vem primeiro.</p>
+<h3>O que são estas apostilas</h3>
+<p>Este acervo reúne as apostilas recebidas, organizadas pelas 16 famílias das pastas. Há documentos com versos em iorubá, traduções em português, relatos e comentários. Mais de uma versão pode aparecer na ficha de um mesmo Odù. A atribuição, a grafia e a redação podem ser conferidas no documento correspondente.</p>
+<h3>Estudo acompanhado na iniciação</h3>
+<p>Use este material como apoio de leitura com o mentor que acompanha sua iniciação. Leve a ele as dúvidas sobre o sentido dos versos, a pronúncia, o contexto das narrativas e as orientações mencionadas. A condução da iniciação e a aplicação do que é ensinado cabem aos responsáveis da sua linhagem.</p>
+<p>Os títulos temáticos e quadros de leitura são recursos do aplicativo. Para citar um verso ou conferir a tradução e as marcas tonais, consulte a página original do PDF.</p>
+<p><a href="https://ich.unesco.org/en/RL/ifa-divination-system-00146" target="_blank" rel="noopener">UNESCO · Sistema divinatório de Ifá</a></p>
+</details>
+<details><summary>Consultar uma imagem</summary>
+<p>Anexe a imagem para tê-la como referência enquanto consulta o acervo. Digite o nome ou o trecho que aparece nela e selecione o resultado correspondente.</p>
+<label for="imagem">Imagem da consulta</label>
+<input id="imagem" type="file" accept="image/*">
+<img id="foto" alt="Imagem anexada para consulta" hidden style="max-width:100%;max-height:22rem">
+</details>
+<div class="layout"><aside><h2>Famílias de Odù</h2><nav id="familias" aria-label="Famílias de Odù"></nav></aside>
+<section><h2 id="titulo">Todo o acervo</h2><p class="family-listing" id="contagem">Abra uma família para ver seus Odù principais e combinados.</p>
+<label for="busca">Pesquisar no acervo</label>
+<input id="busca" type="search" placeholder="Ex. Òrúnmìlà, Akápò, prosperidade">
+<label for="filtro">Passagens</label>
+<select id="filtro"><option value="">Todas as páginas</option><option value="traducao">Com título Tradução</option><option value="ifa diz">Com a expressão Ifá diz</option></select>
+<p class="muted" id="status" role="status"></p><div id="resultados"></div><button id="mais" hidden>Ver mais</button>
+</section></div>
+</main>
+<script src="biblioteca.js"></script>
+<script>
+const el=id=>document.getElementById(id);
+const normalize=s=>s.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase().replace(/\s+/g,' ').trim();
+const docs=acervo.flatMap((family,g)=>family.docs.map(doc=>({...doc,g,key:normalize(doc.title),index:doc.pages.map(normalize)})));
+const names=['Ogbè','Ọ̀yẹ̀kú','Ìwòrì','Òdí','Ìròsùn','Ọ̀wọ́nrín','Ọ̀bàrà','Ọ̀kànràn','Ògúndá','Ọ̀sà','Ìká','Òtúrúpọ̀n','Ọ̀tùrá','Ìrẹtẹ̀','Ọ̀sẹ́','Òfún'];
+const key=s=>normalize(s).replace(/[^a-z]/g,'').replace(/okaran/g,'okanran').replace(/oturopon/g,'oturupon');
+const label=(g,h)=>g===h?names[g]+' Méjì':names[g]+'–'+names[h];
+for(const doc of docs){
+ const family=acervo[doc.g];
+ const alt=doc.title.match(/^Apola-(\d+)\./i);
+ if(doc.url===family.docs[0].url)doc.h=doc.g;
+ else if(doc.g===0&&alt)doc.h=Number(alt[1])-1;
+ else doc.h=names.findIndex((name,h)=>h!==doc.g&&key(doc.title).startsWith(key(names[doc.g]+name)));
+ if(doc.h>=0)doc.key+=' '+normalize(label(doc.g,doc.h))+' '+normalize(label(doc.g,doc.h).replace('–',' '));
+}
+let selected=-1, selectedOdu=-1, shown=24, timer;
+function item(tag,value){const n=document.createElement(tag);n.textContent=value;return n}
+let imageUrl;
+el('imagem').onchange=()=>{
+ if(imageUrl)URL.revokeObjectURL(imageUrl);
+ const file=el('imagem').files[0];
+ el('foto').hidden=!file;
+ if(file){imageUrl=URL.createObjectURL(file);el('foto').src=imageUrl}
+ else el('foto').removeAttribute('src');
+};
+const topics=['Ori','Ire','Ẹbọ','Òrúnmìlà','Olódùmarè','Ajogun','prosperidade','longevidade','família','filhos','casamento','doença','perda','proteção','trabalho','destino','conflito'];
+const introductions=[
+'No episódio de Akápò, o cuidado com o Ori e a atenção às orientações de Ifá acompanham a passagem da incerteza à prosperidade. O texto relaciona Ire ao bem-estar, à família e à longevidade.',
+'A abertura reúne fortuna, harmonia familiar e filhos saudáveis. A oração no início da manhã aparece como orientação, e o primeiro verso apresenta Peregede.',
+'A abertura descreve conquistas que surpreendem a comunidade. O texto explora a realização financeira e familiar diante da aparente falta de meios.',
+'Longevidade e fidelidade aos compromissos com Ifá aparecem juntas na abertura. O texto enfatiza sinceridade, dedicação e firmeza na defesa de princípios.',
+'A abertura coloca Ifá no centro da vocação e do trabalho. A orientação também contempla a pessoa que segue outra profissão e mantém a prática de Ifá.',
+'A realização tem alcance coletivo na abertura. A apostila relaciona o sucesso da pessoa à possibilidade de beneficiar quem convive com ela.',
+'A abertura associa a prosperidade ao destino trazido do céu. O reconhecimento público dessa prosperidade também aparece como parte da passagem.',
+'A abertura enfatiza estima, honra e participação na comunidade. O texto relaciona esse reconhecimento à oportunidade de exercer plenamente os próprios potenciais.',
+'A abertura aproxima realização, afeto e bem-estar dos filhos. A relação com Ifá é apresentada como parte da manifestação de Ire.',
+'A abertura trata de fortuna e sucesso financeiro em uma passagem que menciona diferentes contextos de consulta. O verso de abertura apresenta Kùkù.',
+'A longevidade é o tema da abertura. A apostila situa a recitação do verso no contexto de uma cerimônia conduzida por um Awo.',
+'A abertura reúne fortuna, família, longevidade e a possibilidade de ocupar uma posição importante. Também menciona a bênção de uma divindade.',
+'A abertura narra o recebimento de Ire antes da vinda ao mundo. As orações e bênçãos das divindades acompanham esse momento no relato.',
+'A abertura relaciona felicidade, sustento e vida longa. O verso traduzido usa a imagem do inhame socado e da cabaça para falar das dificuldades.',
+'A abertura aborda o lugar de destaque na família ao longo de duas gerações. O texto liga esse lugar ao destino da pessoa e ao futuro de seu filho ou filha.',
+'A abertura associa realização à liderança desde a juventude. A influência na comunidade é comparada à importância do olho para o corpo.'
+];
+function opening(doc){
+ const lines=doc.pages[0].split(/\r?\n/).filter(line=>line.trim());
+ const idx=lines.findIndex(line=>/Ifá (diz|assegura|prevê)/i.test(line));
+ if(idx<0)return '';
+ return lines.slice(idx,idx+10).join(' ').match(/^[\s\S]{0,490}?[.!?](?=\s+(?:Ifá|Sobre|Em |O verso)|$)/)?.[0]||lines.slice(idx,idx+4).join(' ');
+}
+const glossary=[
+ ['Ori','A cabeça e, nas passagens que tratam de destino, a dimensão pessoal a que se dirigem certas orientações.'],
+ ['Ire','Bênção ou condição favorável. A forma que ela assume depende da passagem.'],
+ ['Ẹbọ','Oferenda ou sacrifício mencionado como parte da orientação em certas consultas.'],
+ ['Òrúnmìlà','Figura central de Ifá. Nas narrativas, pode aparecer consultando, orientando ou enfrentando um problema.'],
+ ['Olódùmarè','Divindade suprema, mencionada em passagens sobre oração, bênçãos ou destino.'],
+ ['Ajogun','Forças adversas que aparecem em alguns relatos, como morte, doença, discórdia ou perda.']
+];
+const themeGroups=[
+ ['Destino e orientação',['Ori','destino','Ẹbọ','Olódùmarè']],
+ ['Bênçãos e realização',['Ire','prosperidade','trabalho','longevidade']],
+ ['Família e comunidade',['filhos','casamento','família']],
+ ['Dificuldades e proteção',['doença','perda','proteção','conflito','Ajogun']],
+ ['Personagens e consulta',['Òrúnmìlà','Akápò','Peregede','Kùkù','Amósù','Amórè','Bàbáláwo']]
+];
+function mentions(page,word){
+ return (' '+page.replace(/[^\p{L}]+/gu,' ')+' ').includes(' '+normalize(word)+' ');
+}
+function study(doc){
+ const root=item('div','');
+ const principal=doc.g===doc.h;
+ const intro=item('section','');intro.className='study-intro';
+ intro.append(item('h4','Entenda primeiro'));
+ const text=principal?introductions[doc.g]:opening(doc);
+ const lead=item('p',text||'A primeira orientação pode ser lida na abertura da apostila.');lead.className='lead';
+ intro.append(lead);
+ if(!principal&&text)intro.append(item('small','Trecho de abertura localizado na apostila'));
+ root.append(intro);
+ const review=item('details','');review.className='memory';
+ review.append(item('summary','Teste sua memória'));
+ const ogbe=doc.g===0&&principal;
+ review.append(item('p',ogbe?'Quem é Akápò, e como a história relaciona Ori e Ire?':'Qual situação a abertura apresenta e que orientação Ifá dá nessa passagem?'));
+ const answer=item('details','');
+ answer.append(item('summary','Revelar resposta'),item('p',ogbe?'Akápò é apresentado como devoto de Ifá. Na narrativa, o cuidado com o Ori antecede a chegada de Ire, que aparece na forma de prosperidade, família e vida longa.':text||'Compare sua resposta com a passagem inicial da apostila.'));
+ review.append(answer);root.append(review);
+ const concepts=item('section','');concepts.className='study-block';
+ concepts.append(item('h4','Conceitos e nomes para lembrar'));
+ const grid=item('div','');grid.className='concept-grid';
+ const namesHere=ogbe?[...glossary,['Akápò','Devoto de Ifá no primeiro relato. Sua história liga a consulta e o cuidado com Ori à chegada de Ire.']]:glossary;
+ const foundTerms=namesHere.filter(([term])=>doc.index.some(page=>mentions(page,term)));
+ for(const [term,definition] of foundTerms){
+  const box=item('div','');box.className='concept';
+  box.append(item('strong',term),item('p',definition));grid.append(box);
+ }
+ if(foundTerms.length){concepts.append(grid);root.append(concepts)}
+ const reading=item('section','');reading.className='study-block';
+ reading.append(item('h4','Estude a apostila por tema'));
+ for(const [title,words] of themeGroups){
+  const hits=doc.index.flatMap((page,i)=>words.some(word=>mentions(page,word))?[i]:[]);
+  if(!hits.length)continue;
+  const group=item('details','');
+  group.append(item('summary',title+' · '+hits.length+' '+(hits.length===1?'página':'páginas')));
+  group.addEventListener('toggle',()=>{
+   if(!group.open||group.childElementCount!==1)return;
+   const terms=words.filter(word=>hits.some(i=>mentions(doc.index[i],word)));
+   const points=[...new Set(hits.slice(0,3).flatMap(i=>mainPoints(doc.pages[i],words,1)))];
+   group.append(readingSummary('Resumo do tema',points,'Nesta apostila: '+terms.join(', ')+'.'));
+   for(const i of hits)group.append(passage(doc,i,words));
+
+  });
+  reading.append(group);
+ }
+ root.append(reading);
+ return root;
+}
+function source(doc,page){const a=item('a',!doc.pdf?'Abrir documento Word':page?'Abrir PDF na página '+page:'Abrir PDF original');a.href=doc.url+(doc.pdf&&page?'#page='+page:'');a.target='_blank';a.rel='noopener';return a}
+function mainPoints(raw,words=[],limit=3){
+ const sentences=raw.replace(/^[ \t]*\d+[ \t]*$/gm,'').replace(/\s+/g,' ').trim()
+  .match(/(?:^|(?<=[.!?])\s+)[^.!?]+[.!?](?=\s|$)/g)||[];
+ const candidates=sentences.map((line,i)=>{
+  const text=line.trim(), searchable=normalize(text);
+  const clues=(searchable.match(/\b(?:ifa|odu|pessoa|consulta|aconselh\w*|orient\w*|oferec\w*|tradu\w*|era|foi|bencao|destino|vida|diz)\b/g)||[]).length;
+  const matched=words.filter(word=>mentions(searchable,word)).length;
+  return {text,i,score:Math.min(clues,4)+matched*2+(i===0?0.5:0),matched};
+ }).filter(({text})=>text.length>=42&&text.length<=320);
+ const best=[];
+ for(const candidate of candidates.sort((a,b)=>b.score-a.score||a.i-b.i)){
+  if(best.length===limit)break;
+  if(best.some(({text})=>normalize(text).slice(0,55)===normalize(candidate.text).slice(0,55)))continue;
+  best.push(candidate);
+ }
+ return best.sort((a,b)=>a.i-b.i).map(({text})=>text);
+}
+function readingSummary(title,points,note){
+ const panel=item('aside','');panel.className='reading-summary';
+ panel.append(item('h4',title));
+ if(points.length){
+  const list=item('ul','');
+  for(const point of points)list.append(item('li',point));
+  panel.append(list);
+ }
+ if(note)panel.append(item('p',note));
+ return panel;
+}
+function highlight(parent,text,words){
+ const tokens=new Set(words.map(normalize));
+ for(const part of text.split(/([\p{L}\p{M}]+)/u)){
+  if(tokens.has(normalize(part)))parent.append(item('mark',part));
+  else parent.append(document.createTextNode(part));
+ }
+}
+const pageSubjects=[
+ ['História de Akápò e o cuidado com o Ori',['Akápò','Ori']],
+ ['Orientações sobre destino e Ori',['destino','Ori']],
+ ['Prosperidade e longevidade',['prosperidade','longevidade']],
+ ['Família e filhos',['família','filhos']],
+ ['Òrúnmìlà e os Ajogun',['Òrúnmìlà','Ajogun']],
+ ['Consulta e oferenda',['consulta','Ẹbọ']],
+ ...themeGroups
+];
+function pageSubject(page){
+ const specific=pageSubjects.slice(0,6).find(([,terms])=>terms.every(term=>mentions(page,term)));
+ if(specific)return specific[0];
+ const ranked=themeGroups.map(([title,terms])=>({title,count:terms.filter(term=>mentions(page,term)).length})).sort((a,b)=>b.count-a.count);
+ if(ranked[0].count>=2)return ranked[0].title;
+ if(/\btraducao\b/.test(page))return 'Tradução de verso';
+ if(/\b(?:tambem conhecido|tambem chamada)\b/.test(page))return 'Apresentação e nomes do Odù';
+ if(/\bifa diz\b/.test(page))return 'Orientações de Ifá';
+ return '';
+}
+function passage(doc,i,words=[]){
+ const box=item('details','');box.className='passage';
+ const subject=pageSubject(doc.index[i]);
+ box.append(item('summary',(doc.pdf?'Página '+(i+1):'Texto do documento')+(subject?' · '+subject:'')));
+ box.addEventListener('toggle',()=>{
+  if(!box.open||box.childElementCount>1)return;
+  const text=doc.pages[i]||'Consulte o texto diretamente na apostila.';
+  const points=mainPoints(text,words);
+  const terms=[...new Set([...words,...glossary.map(([term])=>term)])].filter(term=>mentions(doc.index[i],term));
+  box.append(readingSummary(doc.pdf?'Resumo desta página':'Resumo do documento',points,
+   terms.length?'Nesta passagem: '+terms.join(', ')+'.':points.length?'':'A página apresenta versos, listas ou trechos breves. Leia o conteúdo abaixo para acompanhar a passagem.'));
+  box.append(item('h4','Texto da apostila'));
+  for(const [index,part] of text.split(/(^[ \t]*Tradução[ \t]*$)/im).entries()){
+   if(index%2){box.append(item('h4','Tradução'));continue}
+   if(!part.trim())continue;
+   const body=item('pre','');if(index>0)body.className='translation';
+   highlight(body,part.trim(),words);box.append(body);
+  }
+  box.append(source(doc,i+1));
+ });
+ return box;
+}
+function render(){
+ const q=normalize(el('busca').value), f=el('filtro').value;
+ const matches=[];
+ for(const doc of docs){
+  if((selected>=0&&doc.g!==selected)||(selectedOdu>=0&&doc.h!==selectedOdu))continue;
+  const titleMatch=doc.key.includes(q)||normalize(acervo[doc.g].name).includes(q);
+  if(!q&&!f||titleMatch&&!f){matches.push({doc});continue}
+  for(let i=0;i<doc.index.length;i++){
+   if((titleMatch||doc.index[i].includes(q))&&doc.index[i].includes(f))matches.push({doc,i});
+  }
+ }
+ el('status').textContent=matches.length+' '+(f||matches.some(m=>m.i!==undefined)?'resultados':'apostilas');
+ const fragment=document.createDocumentFragment();
+ for(const {doc,i} of matches.slice(0,shown)){
+  const card=item('article','');
+  const title=doc.h>=0?label(doc.g,doc.h):doc.title;
+  card.append(item('h3',title));
+  const filename=item('p','Apostila · '+doc.title);filename.className='doc-name';card.append(filename);
+  if(i===undefined){
+   if(selectedOdu>=0)card.append(study(doc));
+   else{
+    const intro=doc.g===doc.h?introductions[doc.g]:opening(doc);
+    if(intro){const lead=item('p',intro);lead.className='lead';card.append(lead)}
+    const open=item('button','Estudar '+title);
+    open.onclick=()=>{choose(doc.g,doc.h);el('titulo').scrollIntoView({block:'start'})};
+    card.append(open);
+   }
+  }
+  if(i!==undefined)card.append(passage(doc,i));
+  else{
+   const original=source(doc);original.className='source';card.append(original);
+   const detail=item('details','');
+   detail.append(item('summary','Leitura integral · versos, traduções e comentários ('+doc.pages.length+')'));
+   detail.addEventListener('toggle',()=>{if(detail.open&&detail.childElementCount===1)doc.pages.forEach((_,j)=>detail.append(passage(doc,j)))});
+   card.append(detail);
+  }
+  fragment.append(card);
+ }
+ el('resultados').replaceChildren(fragment);
+ el('mais').hidden=matches.length<=shown;
+}
+function choose(g,h=-1){
+ selected=g;selectedOdu=h;shown=24;
+ el('busca').value='';el('filtro').value='';
+ el('titulo').textContent=g<0?'Todo o acervo':h<0?'Família '+names[g]:label(g,h);
+ const total=new Set(docs.filter(d=>d.g===g&&d.h>=0).map(d=>d.h)).size;
+ el('contagem').textContent=g<0?'Abra uma família para ver os Odù que ela reúne.':h<0?total+' de 16 Odù com apostila nesta família.':'Família '+names[g]+' · '+(g===h?'Odù principal':'Odù combinado');
+ render();
+}
+const all=item('button','Todo o acervo');
+all.onclick=()=>{for(const pane of el('familias').querySelectorAll('details'))pane.open=false;choose(-1)};
+el('familias').append(all);
+names.forEach((name,g)=>{
+ const group=item('details','');
+ const available=new Set(docs.filter(d=>d.g===g&&d.h>=0).map(d=>d.h));
+ group.append(item('summary',name+' · '+available.size+' de 16'));
+ const list=item('div','');list.className='family-odus';
+ const familyButton=item('button','Ver toda a família');
+ familyButton.onclick=()=>choose(g);
+ list.append(familyButton);
+ [g,...names.keys()].filter((h,i)=>i===0||h!==g).forEach(h=>{
+  const b=item('button',label(g,h)+(h===g?' · principal':'')+(available.has(h)?'':' · sem apostila'));
+  b.disabled=!available.has(h);
+  b.onclick=()=>choose(g,h);
+  list.append(b);
+ });
+ group.append(list);
+ group.querySelector('summary').onclick=()=>{
+  if(!group.open){
+   for(const other of el('familias').querySelectorAll('details'))if(other!==group)other.open=false;
+   choose(g);
+  }
+ };
+ el('familias').append(group);
+});
+el('busca').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{shown=24;render()},140)});
+el('filtro').addEventListener('change',()=>{shown=24;render()});
+el('mais').onclick=()=>{shown+=24;render()};
+render();
+</script>
+</html>
+
